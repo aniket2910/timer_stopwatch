@@ -1,0 +1,95 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav {
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav.activeNav {
+  border-bottom: 1px solid #8ab4f8;
+}
+.nav.activeNav p {
+  color: #8ab4f8;
+}
+
+.display {
+  padding: 30px 20px;
+  border-bottom: 1px solid;
+}
+.display .timerDisplay,
+.inputs {
+  display: flex;
+  align-items: center;
+}
+.display .timerDisplay .box {
+  margin-right: 15px;
+}
+.display .inputs .box {
+  width: 10%;
+  margin-right: 15px;
+}
+
+.digit {
+  font-size: 40px;
+}
+.digit .variant {
+  font-size: 20px;
+}
+
+.box input {
+  font-size: 30px;
+  width: 70%;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btnGroup {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.btnGroup > button {
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  margin-right: 8px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.btnGroup > button.primary {
+  background-color: #8ab4f8;
+  transition: background-color 0.5s ease-in-out;
+}
+.btnGroup > button.primary:hover {
+  background-color: #0a66c2;
+}
+
+.btnGroup > button.secondary {
+  background-color: #bdc1c6;
+  transition: background-color 0.5s ease-in-out;
+}
+.btnGroup > button.secondary:hover {
+  background-color: gray;
+}
