@@ -48,7 +48,7 @@ export const Timer = () => {
         setTimerStatus(true);
         setTimerId(intervalId);
         setSec((prev) => (prev < 0 ? prev + 59 : prev - 1));
-      }, 10);
+      }, 1000);
     } else {
       setActiveDisplay("Timer");
       setHour(initHour);
